@@ -1,0 +1,41 @@
+{
+  "repository": "https://github.com/cvlab-epfl/scout_toolkit",
+  "branch": "main",
+  "commit": "1acd79513bfcf16aecef1150283af58c8273542e",
+  "files": {
+    "src/loading.py": {
+      "url": "https://raw.githubusercontent.com/cvlab-epfl/scout_toolkit/1acd79513bfcf16aecef1150283af58c8273542e/src/loading.py",
+      "sha256": "b1ddb2d049b3061f9bc65251bc59b59af8e991c208c4a14f0a3aae32fb1dc817"
+    },
+    "src/geometry.py": {
+      "url": "https://raw.githubusercontent.com/cvlab-epfl/scout_toolkit/1acd79513bfcf16aecef1150283af58c8273542e/src/geometry.py",
+      "sha256": "fed0d07470b5be15f7d32563c75b143b5f70cc42878391300f3120e0f810b4f4"
+    },
+    "src/metric.py": {
+      "url": "https://raw.githubusercontent.com/cvlab-epfl/scout_toolkit/1acd79513bfcf16aecef1150283af58c8273542e/src/metric.py",
+      "sha256": "5cf912a0b98468e03828279e251af190a37c788d92e12cad8fab72ac58fab93e"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/cvlab-epfl/scout_toolkit/1acd79513bfcf16aecef1150283af58c8273542e/README.md",
+      "sha256": "99596bee59a01953a43c3b2a074b08cfb35ab7be1be14de6061b149506c6622d"
+    }
+  },
+  "checked_date": "2026-10-25",
+  "metadata_archive": {
+    "url": "https://scout.epfl.ch/datas/datasets/scout/1.0/scout_calibrations_timestamps.tar.gz",
+    "bytes": 1952579,
+    "sha256": "3ca2f27ec9839397473da2590e115159c4af782c7edc57f2803c7fa69ba79d08",
+    "local_location": "datasets/scout/reference-metadata",
+    "license": "SCOUT terms; not redistributed with source"
+  },
+  "full_archive_preview": {
+    "complete": false,
+    "entries_checked": [
+      "scout/README.md",
+      "scout/calibrations/*.json",
+      "scout/timestamps/*.json",
+      "scout/annotations/coco_format/annotations_coco_sequence_1.json (bounded prefix only)"
+    ],
+    "actual_image_pixels_inspected": false
+  }
+}

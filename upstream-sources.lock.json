@@ -1,0 +1,39 @@
+{
+  "repositories": [
+    {
+      "path": "repos/yachiyo",
+      "url": "https://github.com/riips/AIC24_Track1_YACHIYO_RIIPS.git",
+      "commit": "f881fe0edf60fe697efb2bf4c935b80a80861230"
+    },
+    {
+      "path": "repos/uwipl",
+      "url": "https://github.com/ipl-uw/AIC23_Track1_UWIPL_ETRI.git",
+      "commit": "8e23a69de57d2547b774399ae45792f83a2d17ef"
+    },
+    {
+      "path": "repos/posetrack",
+      "url": "https://github.com/ZhenyuX1E/PoseTrack.git",
+      "commit": "ba727e6bc6e45e44cd6e006b73e00864892173c2"
+    },
+    {
+      "path": "docker/yachiyo/vendor/deep-person-reid",
+      "url": "https://github.com/KaiyangZhou/deep-person-reid.git",
+      "commit": "f8cd150fdf77e8d9e1ed143b7f308c2c609ded50"
+    },
+    {
+      "path": "docker/yachiyo/vendor/mmpose",
+      "url": "https://github.com/open-mmlab/mmpose.git",
+      "commit": "0d9a00c1d64b68999e4b2a4ee5ed0d5ac2c3e296"
+    },
+    {
+      "path": "docker/yachiyo/vendor/BoT-SORT",
+      "url": "https://github.com/NirAharon/BoT-SORT.git",
+      "commit": "251985436d6712aaf682aaaf5f71edb4987224bd"
+    },
+    {
+      "path": "vendor/TrackEval",
+      "url": "https://github.com/JonathonLuiten/TrackEval.git",
+      "commit": "12c8791b303e0a0b50f753af204249e622d0281a"
+    }
+  ]
+}

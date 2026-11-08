@@ -1,0 +1,22 @@
+[
+  {
+    "source": "outputs/osc-analysis-20261101/experiment_comparison.csv",
+    "published": "reports/metrics/osc-analysis-20261101/experiment_comparison.csv"
+  },
+  {
+    "source": "outputs/uwipl-study-20261101/experiment_comparison.csv",
+    "published": "reports/metrics/uwipl-study-20261101/experiment_comparison.csv"
+  },
+  {
+    "source": "outputs/uwipl-anchor-sweep-20261102/experiment_comparison.csv",
+    "published": "reports/metrics/uwipl-anchor-sweep-20261102/experiment_comparison.csv"
+  },
+  {
+    "source": "outputs/uwipl-v3-20261107/experiment_comparison.csv",
+    "published": "reports/metrics/uwipl-v3-20261107/experiment_comparison.csv"
+  },
+  {
+    "source": "outputs/posetrack-time-study-20261106/summary/metrics_comparison.csv",
+    "published": "reports/metrics/posetrack-time-study-20261106/summary/metrics_comparison.csv"
+  }
+]

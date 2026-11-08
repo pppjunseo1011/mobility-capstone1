@@ -1,0 +1,13 @@
+README.md
+environments.json
+sources.lock.json
+adapters/
+scripts/
+tests/
+vendor/TrackEval/
+docs/
+docker/
+repos/yachiyo/
+repos/posetrack/
+repos/uwipl/
+weights/

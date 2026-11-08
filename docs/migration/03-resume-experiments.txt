@@ -1,0 +1,13 @@
+outputs/osc-inference-uncapped-20261101/
+outputs/osc-pilot-uncapped-20261101/
+outputs/osc-analysis-20261101/
+outputs/posetrack-time-study-20261106/aligned_input/
+outputs/posetrack-time-study-20261106/frame_mapping.csv
+outputs/posetrack-time-study-20261106/frame_mapping_all_sources.csv
+outputs/posetrack-time-study-20261106/timestamp_policy.json
+outputs/posetrack-time-study-20261106/input_sha256.json
+outputs/posetrack-time-study-20261106/handoff/03_evaluation/shared_gt.json
+outputs/posetrack-mesh-20261104/full_input30/
+outputs/uwipl-study-20261101/
+outputs/uwipl-anchor-sweep-20261102/
+outputs/uwipl-v3-20261107/

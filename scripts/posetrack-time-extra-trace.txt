@@ -1,0 +1,11 @@
+    if name=='target_init' and (line.startswith('if det.bbox[-1]>0.9') or line.startswith('if all(sample.keypoints_2d[self.main_joints')):
+        t=L['self'];single='det' in L and line.startswith('if det.bbox')
+        sample=L['det'] if single else L['sample'];idx=0 if single else L['i']
+        v=L['view_list'][idx];n=L['number_list'][idx]
+        gates={'confidence':bool(sample.bbox[-1]>.9),'pose_main_joints':bool((sample.keypoints_2d[t.main_joints,-1]>.5).all()),
+          'iou_existing_tracks':bool(np.sum(L['iou_det_mv'][v][n]>.15)<1),
+          'overlap_existing_tracks':bool(np.sum(L['ovr_det_mv'][v][n]>.3)<2)}
+        cluster_samples=[L['detection_sample_list_mv'][vv][nn] for vv,nn in zip(L['view_list'],L['number_list'])]
+        emit('initialization_quality_gate',camera=v,observation_id=sid(sample),cluster_observations=[sid(x) for x in cluster_samples],
+          gates=gates,passed=all(gates.values()),detection_score=sample.bbox[-1],
+          pose_scores=sample.keypoints_2d[t.main_joints,-1],source_line=frame.f_lineno)

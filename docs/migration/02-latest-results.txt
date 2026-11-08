@@ -1,0 +1,6 @@
+deliverables/OSC_SCOUT_analysis_20261101.zip
+deliverables/OSC_SCOUT_analysis_20261101.zip.sha256
+deliverables/PoseTrack_SCOUT_30s_followup_20261106.zip
+deliverables/PoseTrack_SCOUT_30s_followup_20261106.zip.sha256
+deliverables/UWIPL_SCOUT_V3_20261107.zip
+deliverables/UWIPL_SCOUT_V3_20261107.zip.sha256

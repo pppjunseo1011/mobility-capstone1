@@ -1,0 +1,8 @@
+{
+  "recorded_date": "2026-10-25",
+  "repositories": {
+    "yachiyo": {"url": "https://github.com/riips/AIC24_Track1_YACHIYO_RIIPS.git", "branch": "main", "commit": "f881fe0edf60fe697efb2bf4c935b80a80861230"},
+    "uwipl": {"url": "https://github.com/ipl-uw/AIC23_Track1_UWIPL_ETRI.git", "branch": "main", "commit": "8e23a69de57d2547b774399ae45792f83a2d17ef"},
+    "posetrack": {"url": "https://github.com/ZhenyuX1E/PoseTrack.git", "branch": "master", "commit": "ba727e6bc6e45e44cd6e006b73e00864892173c2"}
+  }
+}

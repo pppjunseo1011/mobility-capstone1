@@ -1,0 +1,5 @@
+filterpy==1.4.5
+motmetrics==1.4.0
+easydict==1.13
+lap==0.4.0
+cython-bbox==0.1.3

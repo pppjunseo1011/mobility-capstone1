@@ -1,0 +1,38 @@
+owner	selection	relative_path	type	exists_on_source	note
+common	required	adapters	directory	True	공통 로더·변환·기하 및 format lock
+common	required	scripts	directory	True	작은 공통 스크립트 전체; Docker launcher는 이식 필요
+common	required	tests	directory	True	어댑터 회귀 검증
+common	required	vendor/TrackEval	directory	True	공통 평가 소스·라이선스
+common	required	sources.lock.json	file	True	모델 커밋
+common	reference	README.md	file	True	프로젝트 안내
+common	reference	docs	directory	True	모델·프로토콜·기존 보고서·이관 안내
+common	required	docker	directory	True	설치 명세·smoke·OSC vendor 소스; Docker 실행용 아님
+1_OSC	required	repos/yachiyo	directory	True	원본 모델; 개인 work에 실행 사본
+1_OSC	required	docker/yachiyo/vendor	directory	True	OSC 외부 소스; docker 전체 이동 시 중복 선택 불필요
+2_PoseTrack	required	repos/posetrack	directory	True	검출·ReID·pose·track 소스
+3_UWIPL	required	repos/uwipl	directory	True	STCRA 포함
+common	weights_all_option	weights	directory	True	전체 한번 전송; rsync -aH로 hardlink 보존 가능
+1_OSC	weights_selective_option	weights/yachiyo	directory	True	전체 weights를 옮기면 별도 전송 불필요
+2_PoseTrack	weights_selective_option	weights/posetrack	directory	True	전체 weights를 옮기면 별도 전송 불필요
+3_UWIPL	weights_selective_option	weights/uwipl	directory	True	실영상 및 synthetic 하위 경로의 확보 가중치; 전체 weights 이동 시 별도 전송 불필요
+3_UWIPL	optional	weights/shared	directory	True	YOLOv7 epoch 체크포인트; shared에는 다른 모델과 공통 파일도 있음
+1_OSC	resume_optional	outputs/osc-inference-uncapped-20261101	directory	True	기존 무제한 신경망 출력
+1_OSC	resume_optional	outputs/osc-pilot-uncapped-20261101	directory	True	5초 입력·결과
+1_OSC	resume_optional	outputs/osc-analysis-20261101	directory	True	30초·조건별 실험 및 GT; 타 스크립트 참조 가능
+2_PoseTrack	resume_optional	outputs/posetrack-time-study-20261106/aligned_input	directory	True	시간 정렬된 30초 neural 입력
+2_PoseTrack	resume_optional	outputs/posetrack-time-study-20261106/frame_mapping.csv	file	True	공통 시간과 실제 source frame
+2_PoseTrack	resume_optional	outputs/posetrack-time-study-20261106/frame_mapping_all_sources.csv	file	True	전체 source 처리 상태
+2_PoseTrack	resume_optional	outputs/posetrack-time-study-20261106/timestamp_policy.json	file	True	시간 정렬 정책
+2_PoseTrack	resume_optional	outputs/posetrack-time-study-20261106/input_sha256.json	file	True	입력 계보
+2_PoseTrack	resume_optional	outputs/posetrack-mesh-20261104/full_input30	directory	True	이전 입력 비교
+2_PoseTrack+4_adapter	evaluation	outputs/posetrack-time-study-20261106/handoff/03_evaluation/shared_gt.json	file	True	최신 ZIP에도 있음; --gt로 명시
+3_UWIPL	resume_optional	outputs/uwipl-study-20261101	directory	True	5초·30초 신경망 및 알고리즘 결과
+3_UWIPL	resume_optional	outputs/uwipl-anchor-sweep-20261102	directory	True	앵커 단일 변수 실험
+1_OSC	review	deliverables/OSC_SCOUT_analysis_20261101.zip	file	True	검토용; 전체 재실행 캐시 아님
+2_PoseTrack+4_adapter	review	deliverables/PoseTrack_SCOUT_30s_followup_20261106.zip	file	True	최신 PDF·결과·공통 평가 코드·GT
+3_UWIPL	review	deliverables/UWIPL_SCOUT_handoff_20261101.zip	file	True	STCRA 비교 인계
+3_UWIPL	review	deliverables/UWIPL_SCOUT_anchor_sweep_20261102.zip	file	True	앵커 sweep 인계
+common	required	environments.json	file	True	기존 이미지·단계 구성 참고; 새 컨테이너 설치 완료를 뜻하지 않음
+3_UWIPL	resume_optional	outputs/uwipl-v3-20261107	directory	True	최신 V3·별도 구간 캐시와 GT 진단 포함; 앞선 UWIPL 두 폴더에도 의존
+3_UWIPL	review	deliverables/UWIPL_SCOUT_V3_20261107.zip	file	True	최신 V3 결과 54행·보고서·분석·설정
+common	transfer_lists	docs/migration	directory	True	검증된 전송 목록 3개 및 사용법

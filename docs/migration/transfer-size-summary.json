@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-08",
+  "profiles": [
+    {
+      "list": "01-core.txt",
+      "selected_paths": 13,
+      "unique_inode_bytes": 8037059962,
+      "GiB": 7.485,
+      "unique_inodes": 8142,
+      "symlinks": 0
+    },
+    {
+      "list": "02-latest-results.txt",
+      "selected_paths": 6,
+      "unique_inode_bytes": 296775712,
+      "GiB": 0.276,
+      "unique_inodes": 6,
+      "symlinks": 0
+    },
+    {
+      "list": "03-resume-experiments.txt",
+      "selected_paths": 13,
+      "unique_inode_bytes": 13829295295,
+      "GiB": 12.88,
+      "unique_inodes": 59382,
+      "symlinks": 0
+    }
+  ],
+  "all_profiles_unique_bytes": 22163130969,
+  "all_profiles_GiB": 20.641,
+  "note": "Size by unique source inode, excluding transfer filters; no compression, filesystem overhead, later changes or unsupported destination hardlinks accounted for."
+}

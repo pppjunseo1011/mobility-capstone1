@@ -1,0 +1,17 @@
+{
+  "yachiyo": {
+    "detection": {"target": "detection", "cuda": true},
+    "reid": {"target": "reid", "cuda": true},
+    "pose": {"target": "pose", "cuda": true},
+    "tracking": {"target": "tracking", "cuda": false}
+  },
+  "uwipl": {
+    "botsort": {"target": "botsort", "cuda": true},
+    "mmyolo": {"target": "mmyolo", "cuda": true},
+    "reid": {"target": "reid", "cuda": true},
+    "pose": {"target": "pose", "cuda": true}
+  },
+  "posetrack": {
+    "all": {"target": null, "cuda": true}
+  }
+}

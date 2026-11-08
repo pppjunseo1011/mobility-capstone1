@@ -1,0 +1,9 @@
+chumpy==0.70
+json-tricks==3.17.3
+munkres==1.1.4
+xtcocotools==1.13
+addict==2.4.0
+yapf==0.40.1
+mmdet==2.28.2
+terminaltables==3.1.10
+shapely==1.8.5.post1

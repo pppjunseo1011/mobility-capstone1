@@ -1,0 +1,12 @@
+h5py==3.10.0
+tensorboard==2.13.0
+protobuf==3.20.3
+future==1.0.0
+yacs==0.1.8
+gdown==4.7.3
+flake8==7.0.0
+yapf==0.40.2
+isort==4.3.21
+imageio==2.34.0
+chardet==4.0.0
+
