@@ -1,0 +1,10 @@
+--- a/STCRA/run_stcra.py
++++ b/STCRA/run_stcra.py
+@@ -101,6 +101,3 @@
+     # the structure of avg_tracks = {tid: {fid: [xworld, yworld]}}
+-    cam_weight = { # the number are roughly assigned by the total ground-plane each camera view is covering
+-        "c001": 4.0, "c002": 1.5, "c003": 1.5, "c004": 1.0,
+-        "c005": 1.0, "c006": 1.5, "c007": 2.0
+-    }
++    cam_weight = {f'c{i:03d}': 1.0 for i in range(1,9)}
+     avg_tracks = collections.defaultdict(dict)

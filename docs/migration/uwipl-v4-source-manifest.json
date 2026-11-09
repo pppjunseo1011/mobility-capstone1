@@ -1,0 +1,42 @@
+{
+  "purpose": "UWIPL V4 source handoff; no data, weights, caches or remote validation included",
+  "upstream_uwipl_commit": "8e23a69de57d2547b774399ae45792f83a2d17ef",
+  "files": {
+    "docker/uwipl/Dockerfile": "c9e8a97b66dbada321722a4b931734636dbb6a33bc20bb27cfb974e535c2a1c3",
+    "docker/uwipl/requirements-botsort.txt": "a75b8c75b2f41ffc922d856bbcd82a813337f045feb6789acce8c4c125b43c91",
+    "docker/uwipl/requirements-common.txt": "71e3e19bd40208d4ba00522e8733c41da8d96cd5d0757dcf65663a560076f55c",
+    "docker/uwipl/requirements-mmyolo.txt": "d60546dbf16fa11db9ae1dceb7d017c6460fc54a12a8aa74e3c5af8fd27d1af2",
+    "docker/uwipl/requirements-pose.txt": "94a0a2afcbcf9296cc3e690fb3894eb847ebe925c69e5511c2eea0f9cb7aa19b",
+    "docker/uwipl/requirements-reid.txt": "61d064b3889cd65804736c9cf9035de7ccd25e819fbf0a9dfc901872d3af583d",
+    "docker/uwipl/smoke.py": "022a52b60607d68e664687e8be2860337a94f1638a7fa498475a7ba2dbeb708a",
+    "docs/uwipl-v4-config.md": "8a42aad2e0e1e825ad106bcbcc60932e96554dcf64aec15dd01c44d6f3c1f9c4",
+    "docs/uwipl-v4.md": "628fb01eb58961a8eb05a95edfe2a264d6c316da7cdfc4a22b5a369fe5f0d5f3",
+    "docs/uwipl.md": "77df2e5b4baa694e8312a806c69a56fb33767fb2979d88ccb2798317758786c7",
+    "patches/uwipl/stcra-eight-cameras.patch": "3ca5c3f8d4fbc6072ad2a58ca3d5f0d9922ae7bb6eaec0e2a74517f32db88ad0",
+    "scripts/analyze-uwipl-v4-losses.py": "86796f5bd7a9ed5340f41d1683a9ec447d8745a23b59a9d45c067efd540d344b",
+    "scripts/audit-uwipl-v4-labels.py": "f0aafcf6147de9dcb09199a96b05acf059a8286df5863ca727906320ea36c86d",
+    "scripts/check-uwipl-v4-training-input.py": "e1bd515325ee4feefe229d32a5d9c5efed7bd2f768063b32f1f85206fe0e8ad0",
+    "scripts/evaluate-uwipl-study.py": "0edeba42f59330e42b044ac9ed78c88c124d8a21afd89530a1d587eb3c6920b5",
+    "scripts/finish-uwipl-v4.py": "4c4ed64d88b363f76654da3db325ab4170fa3f51e5b473f4b614c228b38f9585",
+    "scripts/plot-uwipl-v4.py": "3fd8171ee3bf03b7c8399ce1325f84fc565ca01210c79586d98d0252c174edd9",
+    "scripts/prepare-uwipl-v4-finetune.py": "b3cc3b3c2e79149d1fa04e56d1f8690a2cb20816dc661b223f6bd325aa22c94c",
+    "scripts/report-uwipl-v4-config.py": "ea5fc4166b226a7f015169c15e2fda6fd9693bf73984fb6d8eb4cdc0d2b70161",
+    "scripts/report-uwipl-v4.py": "30ee40cb909ebb2bcce8ea296b419a21d88d593d1962dbf008b4adba5fc100a6",
+    "scripts/run-uwipl-v4-config.py": "8c3f8edc234d935ed27f21ff4b8b2a11eda738e1d0080fed6f9e3969483b375a",
+    "scripts/run-uwipl-v4.py": "8b0bf31757790022dbf6d6f5c6c4bbe0805ad703b7ded5ce18503d9185253847",
+    "scripts/scout-common-evaluation-metrics.py": "8384abe022e8f9f367d91a37101877592c78e87b2101bbd8c32c6d9035441ddd",
+    "scripts/scout-sample-stage.py": "59837f5ab53b4b6cc75c00192c1979c5e432d23fee933ce16af81a84530223bb",
+    "scripts/uwipl-study-pose.py": "0d9a403ccfcd91a7f3eac925a1f96d088041b850420fb54dec46327fc788423a",
+    "scripts/uwipl-v3.py": "186d871c9c5f1527a56e54b8a90bd65685e5ab5a677a3573e7a108c0c056c627",
+    "scripts/uwipl-v4-config-study.py": "293297a3fb6054261e460b5f33b5eea5de8a23214ad9fa71b1d4d5c106929396",
+    "scripts/uwipl-v4-detect.py": "0ca0ba5ea8b19c7dd7fa4aeb995d1dc1191590081f1434d8fef1046968d490db",
+    "scripts/uwipl-v4.py": "4ca033aae5f4c3602696827beca302ff43e57955d4ef1b493d7b7b55f190d1b6",
+    "upstream-sources.lock.json": "e75b73eb2ced05fe3cf8131c980690701623af68c33bf469360c78dd5c9b1778"
+  },
+  "stcra_patch": {
+    "base_sha256": "ec364ff0b9299d7d52cb41c56945eb77c4f900fd53461520ffc5e539930c5079",
+    "patched_sha256": "bc0277599fe630f5783702313efc4e1883eaa1d6422b6b743e6dfcf3e5c30742",
+    "legacy_destination": "outputs/uwipl-v3-20261107/run_stcra_scout.py",
+    "note": "Apply to a private copy of the pinned upstream. Camera weights become 1 for c001..c008; this does not create SCOUT homographies."
+  }
+}

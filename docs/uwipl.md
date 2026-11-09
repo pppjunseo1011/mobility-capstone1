@@ -1,5 +1,9 @@
 # UWIPL·ETRI 환경
 
+2026-11-09 설정 조합: 기존 모델/스크립트 보존, 다수결40/50과30+STCRA+후다수결15/30 및 V4 재평가 완료. [결과와 평가 규약](uwipl-v4-config.md).
+
+2026-11-08 V4: 검출 해상도·2×2 타일링·NMS와 다수결/STCRA 후처리를 개발·별도 5초/30초에서 비교했다. 추적36행·검출진단1,440행을 검증했으며, D4는 학습 데이터 준비까지만 완료했다. [결과·한계·전달 자료](uwipl-v4.md).
+
 2026-11-07 V3 순차 실험: V2(넓이1,000·거리80)를 재현하고 E1~E6를 한 조건씩 변경했다. 5초·30초 평균 view-aware IDF1 기준으로 앵커11시점·score>0.95·거리80 유지, 다수결15개 관측·new=0.7·high=0.4, STCRA 4/3/2가 선정됐다. STCRA는 공유 IDF1을 높였지만 HOTA와 IDSW를 악화했으므로 STCRA off 결과도 함께 검토해야 한다. GT 진단 4개와 timestamp 정렬된 별도 구간 6개를 포함해 총 54행 지표를 생성했다. 별도 30초에서 V2→선정 최종 설정은 공유 IDF1 36.18→36.94, IDSW 422→900이며, E5까지만 적용하면 IDSW 133이다. [7쪽 PDF](handoff/UWIPL_SCOUT_V3_단계별검증_20261107.pdf), [전체 비교표](../outputs/uwipl-v3-20261107/experiment_comparison.csv), [전달 ZIP](../deliverables/UWIPL_SCOUT_V3_20261107.zip), [결과 안내](../outputs/uwipl-v3-20261107/report/START_HERE.md)를 참조한다. GT 사용 진단은 정상 추론과 분리했고 기존 V2 및 원본 저장소는 보존했다.
 
 2026-11-02 앵커 단일 변수 실험: 10 FPS의 기존 5초·30초 입력에서 넓이 10,000/5,000/2,500/1,000(거리80 고정), 거리80/60/40/20(넓이10,000 고정), 선정값 조합1,000/40을 비교했다. STCRA는 실행하지 않았다. 평균 view-aware IDF1로 각각1,000과40이 선택됐으나 조합은 넓이만 바꾼1,000/80보다 낮았다. [5쪽 보고서](handoff/UWIPL_SCOUT_앵커_단일변수실험_20261102.pdf), [16행 결과표](../outputs/uwipl-anchor-sweep-20261102/experiment_comparison.csv), [전달 ZIP](../deliverables/UWIPL_SCOUT_anchor_sweep_20261102.zip)을 참조한다. 기준 설정의 예측·GT 분포·평가 지표는 이전 결과와 정확히 일치한다. 같은 개발 구간 GT로 고른 설정이며 독립 테스트 성능이 아니다.
